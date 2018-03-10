@@ -26,6 +26,6 @@
     "angular-sanitize": "^1.6.9",
     "lodash": "^4.17.5",
     "md-data-table": "^2.2.0",
-	"ejs": "^1.0.0"
+    "ejs": "^1.0.0"
   }
 }

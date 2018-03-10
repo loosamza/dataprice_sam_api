@@ -10,15 +10,16 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(bodyParser.json());
 app.use(cors());
-app.use(express.static(__dirname + '/public'));
-
+app.use('/node_modules',express.static(__dirname + '/node_modules/'));
+app.use('/static',express.static(__dirname + '/static/'));
 // views is directory for all template files
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
+app.engine('html', require('ejs').renderFile);
 app.set('port', (process.env.PORT || 3000));
 
 app.get('/', function(request, response) {
-    response.render('pages/index')
+    response.render('index.html')
 });
 
 app.get('/cool', function(request, response) {
