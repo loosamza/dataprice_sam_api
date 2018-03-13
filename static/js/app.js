@@ -1,4 +1,4 @@
-var app = angular.module('app', ['ngSanitize', 'ngResource', 'ngMaterial', 'md.data.table']);
+var app = angular.module('app', ['  ngSanitize', 'ngResource', 'ngMaterial', 'md.data.table']);
 
 
 // --------------- Factory ------------------
